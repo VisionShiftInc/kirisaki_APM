@@ -8,15 +8,16 @@ Microsoft APM package meant for use by the Kirisaki team.
 2. `apm init` the repo if it doesn't have an `apm.yml` file at the root.
 3. Install the parts you want from APM.
 
+**Pro-tip**: use the `--target` option when installing for your specific agent system.
+
+Example: `apm install %YOUR_SELECTED_PACKAGE% --target claude`
+
+
 ### Install the whole package
 This will install the content of all subpackages:
 ```bash
 apm install VisionShiftInc/kirisaki_APM
 ```
-**Pro-tip**: use the `--target` option when installing for your specific agent system.
-
-Example: `apm install %YOUR_SELECTED_PACKAGE% --target claude`
-
 
 ### Install just a specific subpackage
 Each subfolder in this repo containing an `apm.yml` file is its own subpackage.
