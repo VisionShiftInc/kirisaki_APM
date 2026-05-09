@@ -1,0 +1,10 @@
+name: kirisaki-apm
+version: 0.1.0
+description: APM project for kirisaki
+author: Rinku Kazeno
+dependencies:
+  apm:
+  - ./common
+  mcp: []
+includes: auto
+scripts: {}

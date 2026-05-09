@@ -1,0 +1,10 @@
+name: kirisaki-apm-common
+version: 0.1.0
+description: APM project for common Kirisaki uses
+author: Rinku Kazeno
+dependencies:
+  apm:
+  - github/awesome-copilot/skills/microsoft-code-reference
+  mcp: []
+includes: auto
+scripts: {}
