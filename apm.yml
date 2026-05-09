@@ -5,7 +5,7 @@ author: Rinku Kazeno
 
 dependencies:
   apm:
-    - ./common
+    - VisionShiftInc/kirisaki_APM/common
   mcp: []
 devDependencies:
   apm:
