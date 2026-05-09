@@ -4,7 +4,8 @@ description: APM project for kirisaki
 author: Rinku Kazeno
 
 dependencies:
-  apm: []
+  apm:
+    - ./common
   mcp: []
 devDependencies:
   apm:
