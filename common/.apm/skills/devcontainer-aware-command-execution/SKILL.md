@@ -1,15 +1,15 @@
 ---
-name: command-execution
+name: devcontainer-aware-command-execution
 description: >
   Load this skill whenever you might need to execute any shell commands.
   It explains the required way to run commands in the current environment.
-  Any commands you or any subagent may run on the command line will fail unless theses instructions are followed.
+  Any commands you or any subagent may run on the command line will fail unless these instructions are followed.
   Applies to both coding and research tasks.
 metadata:
   version: 0.2
 ---
 
-# Command Execution
+# Dev Container Aware Command Execution
 
 ## Execution Environment
 Before starting any task, determine the execution environment by following these steps:
@@ -33,11 +33,3 @@ Actions that count as shell command execution:
 Actions that do NOT require this check:
 - Reading or editing files on the host filesystem
 - Searching for files or content within the project directory using Glob or Grep
-
-
-## Filesystem Boundaries
-When searching or reading files outside the project directory, only access well-defined, discoverable locations
-relevant to the task — such as the current Python environment's site-packages.
-Never speculatively browse the user's home directory, arbitrary system paths, or paths that may or may not exist.
-If you need to find the location of an installed package, use the appropriate tooling
-(e.g. `python -c "import <pkg>; print(<pkg>.__file__)"`) rather than guessing at paths.
