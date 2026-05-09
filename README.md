@@ -13,6 +13,10 @@ This will install the content of all subpackages:
 ```bash
 apm install VisionShiftInc/kirisaki_APM
 ```
+**Pro-tip**: use the `--target` option when installing for your specific agent system.
+
+Example: `apm install %YOUR_SELECTED_PACKAGE% --target claude`
+
 
 ### Install just a specific subpackage
 Each subfolder in this repo containing an `apm.yml` file is its own subpackage.
